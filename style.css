@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.wrapper{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 25px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.wrapper .inputField{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+.inputField input{
+    width: 85%;
+    height: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.inputField button{
+    width: 45px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #383beb;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.inputField button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.wrapper .todoList{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.todoList li{
+    position: relative;
+    list-style: none;
+    margin-bottom: 8px;
+    background: #f2f2f2;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: default;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+.todoList li .deleteicon{
+    position: absolute;
+    right: -45px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    width: 45px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 0 3px 3px 0;
+    background: #e74c3c;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.todoList li:hover .deleteicon{
+    right: 0px;
+}
+
+.wrapper .footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.footer button{
+    border: none;
+    outline: none;
+    background-color: #383beb;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: auto;
+}
+.footer button.active{
+    opacity: 1;
+    pointer-events: auto;
+}
+.copyright{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+.copyright i:hover{
+    color: red;
+}
+.copyright a{
+    text-decoration: none;
+    color: #fff;
+}
+.copyright a:hover, a:visited{
+    text-decoration: underline;
+    color: #fff;
+}
+
+h1{
+    position: absolute;
+    transform: translate(-75%, -15%);
+    top: 15%;
+    left: 75%;
+    font-size: 4rem;
+    opacity: 0.1;
+    width: 60%;
+}
+h1:hover{
+    opacity: 0.3;
+}
